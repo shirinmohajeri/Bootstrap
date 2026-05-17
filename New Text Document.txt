@@ -1,0 +1,9 @@
+1•col- (extra small devices - screen width less than 576px)
+
+2• col-sm- (small devices - screen width equal to or greater than 576px)
+
+3•col-md- (medium devices - screen width equal to or greater than 768px)
+
+4•col-1g- (large devices - screen width equal to or greater than 992px)
+
+5•col-x1- (xlarge devices - screen width equal to or greater than 1200p)
