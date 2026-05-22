@@ -1,7 +1,18 @@
- .newDiv{
-    margin: 5px;
-    height: 200px;
-    background-color: rgb(146, 146, 247);
-    text-align: center;
-    font-size: larger;
- }
+.hero {
+  background: linear-gradient(135deg, #6610f2, #0d6efd);
+  padding: 100px 0;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+footer {
+  background-color: #212529;
+}
