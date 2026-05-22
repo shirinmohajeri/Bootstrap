@@ -1,18 +1,63 @@
-.hero {
-  background: linear-gradient(135deg, #6610f2, #0d6efd);
-  padding: 100px 0;
-}
+ .newDiv1{
+    margin: 5px;
+    height: 200px;
+    background-color: rgb(146, 146, 247);
+    text-align: center;
+    font-size: larger;
+    color: aliceblue;
+ }
+ .newDiv2{
+   margin: 5px;
+    height: 200px;
+    background-color: rgb(70, 234, 201);
+    text-align: center;
+    font-size: larger;
+    color: aliceblue;
+ }
+ .newDiv3{
+   margin: 5px;
+    height: 200px;
+    background-color: rgb(91, 4, 14);
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: aliceblue;
+ }
+ .newDiv4{
+   margin: 5px;
+    height: 200px;
+    background-color: rgb(4, 57, 100);
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: aliceblue;
+ }
+ .newDiv{
+   margin: 5px;
+    height: 200px;
+    background-color: rgb(159, 123, 5);
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: rgb(244, 242, 243);
+ }
 
-.card {
-  border: none;
-  border-radius: 20px;
-}
+ .newDiv5{
+    margin: 5px;
+    height: 200px;
+    background-color: rgb(231, 102, 179);
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: aliceblue;
+ }
 
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
-
-footer {
-  background-color: #212529;
-}
+ .newDiv6{
+    margin: 5px;
+    height: 200px;
+    background-color: rgb(112, 192, 72);
+    text-align: center;
+    font-size: larger;
+    font-style: bold;
+    color: aliceblue;
+ }
