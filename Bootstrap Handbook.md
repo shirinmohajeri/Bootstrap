@@ -2071,3 +2071,109 @@ Use grouped cards for:
 - service sections
 - dashboard widgets
 - team member cards
+---
+### Create Space Between Cards
+
+Bootstrap uses:
+
+```html
+g-1
+g-2
+g-3
+g-4
+g-5
+```
+
+to create spacing between cards and columns.
+
+---
+
+## Example
+
+```html
+<div class="container">
+
+   <!-- g-4 adds space between cards -->
+   <div class="row g-4">
+
+      <div class="col-md-3">
+
+         <div class="card">
+
+            <div class="card-header">
+               Header
+            </div>
+
+            <div class="card-body">
+
+               <h5 class="card-title">
+                  Title
+               </h5>
+
+               <p class="card-text">
+                  Some text
+               </p>
+
+            </div>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Gutter Sizes
+
+| Class | Space Size |
+|---|---|
+| `g-1` | very small space |
+| `g-2` | small space |
+| `g-3` | medium space |
+| `g-4` | large space |
+| `g-5` | very large space |
+
+---
+
+## Horizontal Space Only
+
+```html
+<div class="row gx-5">
+```
+
+`gx` = horizontal spacing (left and right)
+
+---
+
+## Vertical Space Only
+
+```html
+<div class="row gy-5">
+```
+
+`gy` = vertical spacing (top and bottom)
+
+---
+
+## Most Common Usage
+
+```html
+<div class="row g-4">
+```
+
+or
+
+```html
+<div class="row g-5">
+```
+
+Used for:
+- cards
+- dashboards
+- ecommerce products
+- portfolio layouts
+- blog sections
