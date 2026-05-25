@@ -1539,3 +1539,245 @@ Use overlays for:
 - portfolio showcases
 - landing pages
 - ecommerce cards
+---
+---
+
+## 23. Card Colors
+
+Bootstrap provides color utility classes to change the background and text colors of cards.
+
+Card colors are useful for:
+
+- alerts
+- notifications
+- pricing cards
+- dashboards
+- product highlights
+- status cards
+
+---
+
+## Basic Colored Card
+
+```html
+<div class="card bg-primary text-white" style="width: 18rem;">
+
+   <div class="card-body">
+
+      <h5 class="card-title">
+         Primary Card
+      </h5>
+
+      <p class="card-text">
+         This is a Bootstrap primary card.
+      </p>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Important Classes
+
+| Class | Meaning |
+|---|---|
+| `bg-primary` | Blue background |
+| `bg-success` | Green background |
+| `bg-danger` | Red background |
+| `bg-warning` | Yellow background |
+| `bg-info` | Light blue background |
+| `bg-dark` | Dark background |
+| `bg-light` | Light background |
+| `text-white` | White text color |
+| `text-dark` | Dark text color |
+
+---
+
+## Common Card Colors
+
+### Primary Card
+
+```html
+<div class="card bg-primary text-white">
+```
+
+Used for:
+- main content
+- important information
+
+---
+
+### Success Card
+
+```html
+<div class="card bg-success text-white">
+```
+
+Used for:
+- success messages
+- completed actions
+
+---
+
+### Danger Card
+
+```html
+<div class="card bg-danger text-white">
+```
+
+Used for:
+- errors
+- warnings
+- delete actions
+
+---
+
+### Warning Card
+
+```html
+<div class="card bg-warning text-dark">
+```
+
+Used for:
+- alerts
+- notifications
+- warnings
+
+Important:
+
+```html
+text-dark
+```
+
+is better because yellow background is very bright.
+
+---
+
+### Dark Card
+
+```html
+<div class="card bg-dark text-white">
+```
+
+Used for:
+- dark UI
+- dashboards
+- modern layouts
+
+---
+
+## Multiple Color Examples
+
+```html
+<div class="card bg-primary text-white mb-3">
+   <div class="card-body">
+      <h5 class="card-title">Primary Card</h5>
+   </div>
+</div>
+
+<div class="card bg-success text-white mb-3">
+   <div class="card-body">
+      <h5 class="card-title">Success Card</h5>
+   </div>
+</div>
+
+<div class="card bg-danger text-white mb-3">
+   <div class="card-body">
+      <h5 class="card-title">Danger Card</h5>
+   </div>
+</div>
+```
+
+---
+
+## Explanation of Extra Class
+
+| Class | Meaning |
+|---|---|
+| `mb-3` | Margin bottom |
+
+Used to add space between cards.
+
+---
+
+## Visualization
+
+```text
++----------------------+
+|  Primary Card        |
+|  Blue Background     |
++----------------------+
+
++----------------------+
+|  Success Card        |
+|  Green Background    |
++----------------------+
+
++----------------------+
+|  Danger Card         |
+|  Red Background      |
++----------------------+
+```
+
+---
+
+## Combining With Other Classes
+
+We can combine colors with:
+
+```html
+shadow
+rounded
+text-center
+```
+
+Example:
+
+```html
+<div class="card bg-dark text-white shadow rounded text-center">
+
+   <div class="card-body">
+
+      <h5 class="card-title">
+         Dark Card
+      </h5>
+
+      <p class="card-text">
+         Bootstrap dark card example.
+      </p>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Important Note
+
+Always make sure the text color is readable.
+
+Examples:
+
+```html
+bg-dark + text-white
+bg-warning + text-dark
+```
+
+Good contrast is important.
+
+---
+
+## When to Use Colored Cards
+
+Use colored cards for:
+
+- dashboard statistics
+- pricing sections
+- notifications
+- warning messages
+- ecommerce products
+- admin panels
+- portfolio sections
