@@ -1781,3 +1781,293 @@ Use colored cards for:
 - ecommerce products
 - admin panels
 - portfolio sections
+---
+---
+
+## 24. Card Groups & Decks
+
+Bootstrap allows multiple cards to be displayed together using:
+
+- card groups
+- card decks
+
+These are useful for creating:
+
+- product sections
+- pricing layouts
+- portfolio cards
+- blog cards
+- dashboard cards
+
+---
+
+## What is a Card Group?
+
+`card-group` combines multiple cards into one connected layout.
+
+All cards automatically get:
+
+- equal height
+- equal width
+- connected structure
+
+---
+
+## Basic Card Group
+
+```html
+<div class="card-group">
+
+   <div class="card">
+
+      <div class="card-body">
+
+         <h5 class="card-title">
+            Card 1
+         </h5>
+
+         <p class="card-text">
+            This is first card.
+         </p>
+
+      </div>
+
+   </div>
+
+   <div class="card">
+
+      <div class="card-body">
+
+         <h5 class="card-title">
+            Card 2
+         </h5>
+
+         <p class="card-text">
+            This is second card.
+         </p>
+
+      </div>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Important Classes
+
+| Class | Meaning |
+|---|---|
+| `card-group` | Groups cards together |
+| `card` | Individual card |
+| `card-body` | Content area |
+
+---
+
+## What Happens in Card Group?
+
+Bootstrap automatically:
+- makes cards same height
+- aligns cards evenly
+- removes spacing between cards
+
+---
+
+## Visualization
+
+```text
++-------------+-------------+
+| Card 1      | Card 2      |
+| Text        | Text        |
++-------------+-------------+
+```
+
+---
+
+## Card Group With Images
+
+```html
+<div class="card-group">
+
+   <div class="card">
+
+      <img class="card-img-top" src="image1.jpg">
+
+      <div class="card-body">
+
+         <h5 class="card-title">
+            Laptop
+         </h5>
+
+         <p class="card-text">
+            Gaming laptop
+         </p>
+
+      </div>
+
+   </div>
+
+   <div class="card">
+
+      <img class="card-img-top" src="image2.jpg">
+
+      <div class="card-body">
+
+         <h5 class="card-title">
+            Camera
+         </h5>
+
+         <p class="card-text">
+            Professional camera
+         </p>
+
+      </div>
+
+   </div>
+
+</div>
+```
+
+---
+
+## What is Card Deck?
+
+In Bootstrap 4:
+
+```html
+card-deck
+```
+
+was used to create equal width cards with spacing.
+
+Example:
+
+```html
+<div class="card-deck">
+```
+
+---
+
+## Important Bootstrap 5 Note
+
+Bootstrap 5 removed:
+
+```html
+card-deck
+```
+
+Instead, Bootstrap 5 recommends using:
+
+```html
+row
+col
+gutter classes
+```
+
+Example:
+
+```html
+<div class="row g-4">
+
+   <div class="col-md-4">
+
+      <div class="card h-100">
+
+         <div class="card-body">
+
+            <h5 class="card-title">
+               Card 1
+            </h5>
+
+         </div>
+
+      </div>
+
+   </div>
+
+   <div class="col-md-4">
+
+      <div class="card h-100">
+
+         <div class="card-body">
+
+            <h5 class="card-title">
+               Card 2
+            </h5>
+
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Explanation of Extra Classes
+
+| Class | Meaning |
+|---|---|
+| `row` | Bootstrap row |
+| `col-md-4` | Responsive column |
+| `g-4` | Gutter spacing |
+| `h-100` | Equal height cards |
+
+---
+
+## Why Use `h-100`?
+
+```html
+h-100
+```
+
+makes all cards same height even if content size is different.
+
+---
+
+## Better Bootstrap 5 Layout
+
+Modern Bootstrap projects usually use:
+
+```html
+row + col + card
+```
+
+instead of old:
+
+```html
+card-deck
+```
+
+because it is:
+- more flexible
+- responsive
+- easier to control
+
+---
+
+## Visualization
+
+```text
++-------------+   +-------------+   +-------------+
+| Card 1      |   | Card 2      |   | Card 3      |
+| Text        |   | Text        |   | Text        |
++-------------+   +-------------+   +-------------+
+```
+
+---
+
+## When to Use Card Groups
+
+Use grouped cards for:
+
+- ecommerce products
+- pricing tables
+- portfolio projects
+- blog sections
+- service sections
+- dashboard widgets
+- team member cards
