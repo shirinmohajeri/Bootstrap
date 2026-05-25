@@ -1294,3 +1294,248 @@ Use text alignment inside cards for:
 - profile cards
 - dashboard widgets
 - portfolio sections
+---
+---
+
+## 22. Card Image Overlay (Top & Bottom Text)
+
+Bootstrap provides:
+
+```html
+card-img-overlay
+```
+
+to place text directly on top of an image.
+
+This is useful for:
+
+- banners
+- hero sections
+- product advertisements
+- portfolio cards
+- featured content
+
+---
+
+## Basic Card Image Overlay
+
+```html
+<div class="card text-white">
+
+   <img 
+      class="card-img"
+      src="image.jpg"
+      alt="Card image">
+
+   <div class="card-img-overlay">
+
+      <h5 class="card-title">
+         This is the title
+      </h5>
+
+      <p class="card-text">
+         This is a paragraph
+      </p>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Important Classes
+
+| Class | Meaning |
+|---|---|
+| `card` | Creates card container |
+| `card-img` | Full image inside card |
+| `card-img-overlay` | Places content over image |
+| `card-title` | Title text |
+| `card-text` | Paragraph text |
+| `text-white` | White text color |
+
+---
+
+## What is `card-img-overlay`?
+
+`card-img-overlay` allows us to place text on top of the image.
+
+Example:
+
+```html
+<div class="card-img-overlay">
+   Content here
+</div>
+```
+
+Without it:
+
+```text
+Text appears under image
+```
+
+With it:
+
+```text
+Text appears on top of image
+```
+
+---
+
+## Important Structure
+
+Correct structure:
+
+```html
+<div class="card">
+
+   <img class="card-img">
+
+   <div class="card-img-overlay">
+      Text here
+   </div>
+
+</div>
+```
+
+`card-img-overlay` must be inside `.card`.
+
+---
+
+## Overlay Text at Top
+
+By default, overlay text appears near the top.
+
+Example:
+
+```html
+<div class="card-img-overlay">
+
+   <h5 class="card-title">
+      Coffee Title
+   </h5>
+
+   <p class="card-text">
+      Coffee description
+   </p>
+
+</div>
+```
+
+---
+
+## Overlay Text at Bottom
+
+We can move overlay text to the bottom using flexbox utilities.
+
+Example:
+
+```html
+<div class="card text-white">
+
+   <img class="card-img" src="image.jpg">
+
+   <div class="card-img-overlay d-flex flex-column justify-content-end">
+
+      <h5 class="card-title">
+         Coffee Title
+      </h5>
+
+      <p class="card-text">
+         Coffee description
+      </p>
+
+   </div>
+
+</div>
+```
+
+---
+
+## Explanation of Extra Classes
+
+| Class | Meaning |
+|---|---|
+| `d-flex` | Activates flexbox |
+| `flex-column` | Vertical layout |
+| `justify-content-end` | Moves content to bottom |
+
+---
+
+## Visualization
+
+### Top Overlay
+
+```text
++--------------------------+
+| Title                    |
+| Paragraph                |
+|                          |
+|          Image           |
+|                          |
++--------------------------+
+```
+
+---
+
+### Bottom Overlay
+
+```text
++--------------------------+
+|                          |
+|          Image           |
+|                          |
+| Title                    |
+| Paragraph                |
++--------------------------+
+```
+
+---
+
+## Better Styled Example
+
+```html
+<div class="card text-white shadow">
+
+   <img 
+      class="card-img"
+      src="image.jpg">
+
+   <div class="card-img-overlay d-flex flex-column justify-content-end">
+
+      <h5 class="card-title">
+         Coffee Product
+      </h5>
+
+      <p class="card-text">
+         Fresh coffee with beautiful presentation.
+      </p>
+
+   </div>
+
+</div>
+```
+---
+
+## Important Note
+
+If the text is difficult to read on the image:
+
+- use `text-white`
+- use darker images
+- add background overlay later with CSS
+
+---
+
+## When to Use Card Image Overlay
+
+Use overlays for:
+
+- hero banners
+- advertisements
+- product highlights
+- featured blog posts
+- portfolio showcases
+- landing pages
+- ecommerce cards
