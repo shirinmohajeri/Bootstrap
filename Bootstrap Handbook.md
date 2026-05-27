@@ -2177,3 +2177,145 @@ Used for:
 - ecommerce products
 - portfolio layouts
 - blog sections
+  ---
+  ---
+
+## 26. Nav Pills
+
+Bootstrap provides `nav-pills` to create navigation links with pill-style active buttons.
+
+---
+
+## Basic Nav Pills Example
+
+```html
+<div class="container">
+
+   <ul class="nav nav-pills">
+
+      <li class="nav-item">
+         <a class="nav-link" href="#">
+            Home
+         </a>
+      </li>
+
+      <li class="nav-item">
+         <a class="nav-link" href="#">
+            Contact
+         </a>
+      </li>
+
+      <li class="nav-item">
+         <a class="nav-link" href="#">
+            About
+         </a>
+      </li>
+
+      <li class="nav-item">
+         <a class="nav-link active" href="#">
+            Product
+         </a>
+      </li>
+
+   </ul>
+
+</div>
+```
+
+---
+
+## Important Classes
+
+| Class | Meaning |
+|---|---|
+| `nav` | Creates navigation menu |
+| `nav-pills` | Creates pill-style navigation |
+| `nav-item` | Creates each navigation item |
+| `nav-link` | Styles each navigation link |
+| `active` | Shows the selected/current page |
+
+---
+
+## What is `nav-pills`?
+
+`nav-pills` makes the active link look like a rounded button.
+
+Example:
+
+```html
+<ul class="nav nav-pills">
+```
+
+Result:
+
+```text
+Home   Contact   About   [ Product ]
+```
+
+`Product` is active because it has:
+
+```html
+class="nav-link active"
+```
+
+---
+
+## Difference Between `nav-tabs` and `nav-pills`
+
+| Class | Look |
+|---|---|
+| `nav-tabs` | Tab style |
+| `nav-pills` | Rounded pill/button style |
+
+Example:
+
+```html
+<ul class="nav nav-tabs">
+```
+
+```html
+<ul class="nav nav-pills">
+```
+
+---
+
+## Center Nav Pills
+
+```html
+<ul class="nav nav-pills justify-content-center">
+```
+
+`justify-content-center` moves the nav to the center.
+
+---
+
+## Right Nav Pills
+
+```html
+<ul class="nav nav-pills justify-content-end">
+```
+
+`justify-content-end` moves the nav to the right.
+
+---
+
+## Vertical Nav Pills
+
+```html
+<ul class="nav nav-pills flex-column">
+```
+
+`flex-column` makes the navigation vertical.
+
+---
+
+## When to Use Nav Pills
+
+Use `nav-pills` for:
+
+- website menus
+- dashboard tabs
+- profile pages
+- category filters
+- product sections
+- admin panels
